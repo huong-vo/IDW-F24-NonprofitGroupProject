@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Elephant Sanctuary in Tennesse</title>
         <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -26,20 +27,156 @@
             </section>
 
             <!-- form -->
-            <section>
+            <section id="form">
+                <div class="heading">
+                    <h1>DONATE</h1>
+                </div>
 
+                <div class="content">
+                    <div id="donor-info">
+                        <p class="content-name">Your Information</p>
+
+                        <form>
+                            <label for="donate-first-name">First Name</label>
+                            <input type="text" id="donate-first-name" name="donate-first-name" required>
+
+                            <label for="donate-last-name">Last Name</label>
+                            <input type="text" id="donate-last-name" name="donate-last-name" required>
+
+                            <label for="donate-email">Email Address</label>
+                            <input type="text" id="donate-email" name="donate-email">
+                        </form>
+                    </div>
+
+                    <div id="payment-info">
+                        <p class="content-name">Payment Information</p>
+
+                        <form>
+                            <label for="credit-card">Credit Card Number</label>
+                            <input type="tel" id="credit-card" name="credit-card" maxlength="16" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" placeholder="0000 0000 0000 0000" required> 
+                            
+                            <label for="expiration">Expiration</label>
+                            <input type="tel" id="expiration" name="expiration" maxlength="5" placeholder="MM/YY" required>
+
+                            <label for="security-code">Security Code</label>
+                            <input type="tel" id="security-code" name="security-code" maxlength="3" placeholder="CVV" required>
+
+                            <label for="donate-amount">Amount</label>
+                            <input type="number" id="donate-amount" name="donate-amount" min="0.01" step="0.01">
+                        
+                            <div class="secure">
+                                <input type="checkbox" id="secure" name="secure">
+                                <label for="secure">Save this payment information securely.</label>
+                            </div>
+
+                            <button id="donate">Donate</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="donation-info">
+                    <h3>Who We Are</h3>
+                    <p>
+                        The Sanctuary provides the elephants with protected habitats, quality meals, and automatic waterers. The elephants in all areas are taken care of by our Husbandary and Vet Teams and monitored via cameras as their habitats continue to grow. We promote educational programs to raise awareness about the importance of conservation. Your generosity enables us to meet the needs of elephants for the next 30 years and beyond!
+                    </p>
+                </div>
             </section>
 
             <!-- contact -->
-            <section>
+            <section id="contact">
+                <div class="heading">
+                    <h1>CONTACT US</h1>
+                </div>
 
+                <div class="content">
+                    <div id="site-info">
+                        <!-- <a href="https://www.iconpacks.net/free-icon/mail-2569.html">where i got these icons for free</a> -->
+                        <div>
+                            <img src="mobile-phone-2641.png" alt="phone icon">
+                            <p class="content-name">Phone</p>
+                            <p>
+                                <a href="tel:+19317966500">(931) 796-6500</a>
+                            </p>
+                        </div>
+    
+                        <div>
+                            <img src="location-2955.png" alt="location icon">
+                            <p class="content-name">Location</p>
+                            <p>
+                                PO Box 393
+                                <br>
+                                Hohenwald, TN 38462
+                            </p>
+                        </div>
+    
+                        <div>
+                            <img src="mail-2569.png" alt="email icon">
+                            <p class="content-name">Email</p>
+                            <p>
+                                <a href="mailto:elephant@elephants.com">elephant@elephants.com</a>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div id="message-form">
+                        <p class="content-name">
+                            Please fill out this form for any question or concern. 
+                            <br>
+                            We will respond to your inquiry as soon as possible.
+                        </p>
+    
+                        <form action="index.html" method="POST">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name">
+    
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+    
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    
+                            <button id="send-message">Send Message</button>
+                        </form>
+                    </div>
+    
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/ElephantSanctuaryTN"  target="_blank">
+                                <img src="Facebook_Logo_Primary.png" alt="facebook logo">
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://x.com/elephantstn/">
+                                <img src="x-logo-black.png" alt="X logo" target="_blank">
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.instagram.com/theelephantsanctuary/"  target="_blank">
+                                <img src="Instagram_Glyph_Black.png" alt="instagram logo">
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.youtube.com/user/elephantsanctuarytn"  target="_blank">
+                                <img src="yt_icon_rgb.png" alt="youtube logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492.450910050122!2d-87.55401338864351!3d35.54813373715982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887cb550a097d97b%3A0x60eefce79296e5e2!2sThe%20Elephant%20Sanctuary%20in%20Tennessee%20%E2%80%94%20Elephant%20Discovery%20Center!5e0!3m2!1sen!2sus!4v1732247846051!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.225455025065!2d-87.55401338864351!3d35.54813373715972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887cb550a097d97b%3A0x60eefce79296e5e2!2sThe%20Elephant%20Sanctuary%20in%20Tennessee%20%E2%80%94%20Elephant%20Discovery%20Center!5e0!3m2!1sen!2sus!4v1732325992896!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
             </section>
         </main>
 
         <footer>
-
+            
         </footer>
 
-        <script src="script.js"></script>
+        
     </body>
 </html>
