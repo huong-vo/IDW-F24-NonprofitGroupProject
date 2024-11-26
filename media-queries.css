@@ -1,0 +1,49 @@
+/* mobile devices */
+@media screen and (max-width: 480px) {
+    #contact .content .map-container .site-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    #contact .content .map-container .site-info div {
+        display: grid;
+        grid-template-columns: 4rem auto;
+        justify-items: center;
+        position: relative;
+    }
+
+    #contact .content .map-container .site-info img {
+        grid-column: 1 / 2;
+        filter: invert(1);
+        background-color: transparent;
+    }
+
+    #contact .content .map-container .site-info p {
+        grid-column: 2 / 3;
+        margin: 0;
+    }
+
+    
+
+/* tablets, ipads */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .content {
+        width: 80%;
+    }
+}
+
+/* small screeens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* large screens, desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+/* extra large screens, tv */
+@media screen and (min-width: 1201px) {
+
+}

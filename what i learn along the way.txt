@@ -1,0 +1,14 @@
+for my website:
+	do html and css simultaneously
+		pros: can see page turning out piece by piece
+		challenges: wasting too much time making it perfect while not seeing the big picture
+		lesson: html first then css
+
+for my project:
+	do html first then css
+	mistakes: doing css way too detailed for the specific screen in front of me, but there are more than one type of screens
+		pros: have fine design on laptop
+		challenges: hard to change when it comes to media queries
+		lesson: 
+			sometimes things look good on figma but not mean look good or accessible in reality
+			worry about what how the elements should look in genereal and then design  (think about grid then) then media queries. while designing, small screens first then large screens.
