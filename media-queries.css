@@ -1,48 +1,188 @@
-/* mobile devices */
+/* small mobile devices */
 @media screen and (max-width: 480px) {
-    #contact .content .map-container .site-info {
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+
+    #form .heading,
+    #form .heading h1 {
+        background-color: var(--color-orangeish);
+    }
+}
+
+@media screen and (min-width: 481px) {
+    #form {
+        background-image: url(form-image.png);
+        background-size: 100% 70%;
+        background-repeat: no-repeat;
+    }
+
+    #form .heading {
+        background-color: transparent;
+    }
+
+    #form .heading h1 {
+        color: black;
+        background-color: transparent;
+    }
+}
+
+/* large mobile devices */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .content {
+        width: 60%;
+        margin: auto;
+    }
+
+    #form .donation-info {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact .site-info {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
     }
 
-    #contact .content .map-container .site-info div {
+    #contact .site-info div {
         display: grid;
-        grid-template-columns: 4rem auto;
-        justify-items: center;
-        position: relative;
+        grid-template-columns: 70px auto;
+        justify-items: start;
     }
 
-    #contact .content .map-container .site-info img {
+    #contact .site-info img {
         grid-column: 1 / 2;
-        filter: invert(1);
-        background-color: transparent;
     }
 
-    #contact .content .map-container .site-info p {
+    #contact .site-info p {
         grid-column: 2 / 3;
-        margin: 0;
-    }
-
+    }    
+}
     
 /* tablets, ipads */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .content {
-        width: 80%;
+@media screen and (min-width: 769px) {
+    #contact .grid-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        column-gap: 5%;
+    }
+
+    #contact .grid-content .message-container {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 3;
+    }
+
+    #contact .grid-content .map {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #contact .grid-content .site-info {
+        padding: 0;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        column-gap: 2rem;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    #contact .grid-content .site-info div {
+        /* border: dotted 2px yellow; */
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: start;
+        column-gap: 1rem;
+    }
+
+    #contact .grid-content .site-info div .content-name {
+        grid-column: 2 / 3;
+        margin-bottom: 0;
+    }
+    
+    #contact .grid-content .site-info div :last-child {
+        grid-column: 2 / 3;
     }
 }
 
 /* small screeens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #form .content {
+        width: 50%;
+        margin: auto;
+    }
 
+    #form .donation-info {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 /* large screens, desktops */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #form .content {
+        width: 45%;
+        margin: auto;
+    }
 
+    #form .donation-info {
+        width: 75%;
+        margin: auto;
+    }
 }
 
 /* extra large screens, tv */
 @media screen and (min-width: 1201px) {
+    #form .content {
+        width: 40%;
+        margin: auto;
+    }
 
+    #form .donation-info {
+        width: 70%;
+        margin: auto;
+    }
+
+    #contact .grid-content .site-info div {
+        display: grid;
+        grid-template-rows: 45px 35px auto;
+        justify-items: center;
+        align-items: start;
+    }
+
+    #contact .grid-content .site-info :first-child {
+        grid-row: 1 / 2;
+        flex-grow: 1;
+    }
+
+    #contact .grid-content .site-info :nth-child(2) {
+        grid-row: 2 / 3;
+        flex-grow: 1;
+    }
+
+    #contact .grid-content .site-info :last-child {
+        grid-row: 3 / 4;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    #contact .map iframe {
+        height: 300px;
+    }
 }
+
+
+
+

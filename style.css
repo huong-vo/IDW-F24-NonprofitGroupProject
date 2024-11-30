@@ -23,7 +23,7 @@
 /* both form and contact */
 #form, 
 #contact {
-    
+    margin-bottom: 1.5rem;
 }  
 
 .heading h1 {
@@ -33,15 +33,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--color-orangeish);
-}
-
-.content {
-    /* width: 100%; */
-    /* margin: auto; */
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
 }
 
 .content form {
@@ -85,34 +76,37 @@
     margin: 1rem;
     font-size: var(--p-fs, initial);
     font-weight: var(--p-fw, initial);
+    cursor: pointer;
     align-self: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .content form button:hover {
-    background-color: red;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 
 
 /* form */
 #form {
-    height: 50;
     background: linear-gradient(var(--color-orangeish, initial) 65%, var(--color-darkgreen) 65%);
-    
 }
 
 #form .heading {
     height: 6rem;
     position: relative;
-    background-color: var(--color-orangeish);
+    
 }
 
 #form .content {
+    /* width: 100%; */
+    /* margin: auto; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
     border: solid 2px var(--color-creamish, initial);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
     border-radius: 20px;
 }
 
@@ -145,7 +139,7 @@
 #form .donation-info {
     /* width: 100%; */
     /* margin: auto; */
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;      
     text-align: center;
 }
 
@@ -154,7 +148,7 @@
 }
 
 #form .donation-info p {
-    text-align: left;
+    text-align: center;
     font-size: var(--p-fs, initial);
     letter-spacing: 0.7px;
     margin-top: 0.5rem;
@@ -172,14 +166,15 @@
 
 #contact .heading h1 {
     text-align: center;
-    font-size: var(--h1-fs, initial);
+    /* font-size: var(--h1-fs, initial);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     border: solid 2px;
     padding: 1rem;
     white-space: nowrap;
+    background-color: var(--color-orangeish);
 }
 
 #contact .content .content-name {
@@ -188,11 +183,15 @@
     font-weight: var(--p-fw, initial);
     letter-spacing: 0px;
     text-align: center;
+    white-space: nowrap;
 }
 
-#contact .content .message-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+#contact .content {
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 #contact .content ul {
@@ -203,30 +202,30 @@
     column-gap: 2rem;
 }
 
-#contact .content .map-container {
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#contact .content .map-container .site-info {
-    margin-top: 2rem;
-}
-
 #contact .content img {
     height: 2rem;
 }
 
-#contact .content .map-container .map iframe {
-    width: 100vw;
-    height: 250px;
-    margin-left: -2rem;
+#contact .map {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
+#contact .map iframe {
+    width: 100%;
+    height: 250px;
+}
 
+#contact .site-info {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    /* border: dashed 2px red; */
+}
 
-
-
-
+#contact .site-info img {
+    filter: invert(1);
+    background-color: transparent;
+}
 
