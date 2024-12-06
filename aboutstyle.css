@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-darkgreen, black);
+    color: var(--color-creamish, white);
+}
+
+:root {
+    --h1-fs: 2rem;
+    --h3-fs: 1.5rem;
+    --h4-fs: 1.2rem;
+    --p-fs: 1.1rem;
+
+    --p-fw: 600;
+    
+    --color-creamish: #EAD7BD;
+    --color-darkgreen: #424436;
+    --color-orangeish: #B45427;
+}
+
+/* General Reset */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    
+    border-radius: 8px;
+  }
+  
+  .intro-section .content {
+    flex: 1;
+    padding-right: 1rem;
+  }
+  
+  .intro-section .picture {
+    flex: 1;
+    height: 150px;
+    width: 300px;
+    background-color:none;
+    border-radius: 8px;
+  }
+  
+  .grid-section {
+    margin-bottom: 2rem;
+  }
+  
+  .grid-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .card {
+    height: 100px;
+    background-color:none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+
+
+
+
+
+
+
