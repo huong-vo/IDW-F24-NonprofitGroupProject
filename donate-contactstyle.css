@@ -139,7 +139,7 @@ nav .nav-sec .logo img {
 }
 
 .content form button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -261,7 +261,34 @@ nav .nav-sec .logo img {
 }
 
 #contact .content img {
-    height: 2rem;
+    height: 2.2rem;
+    transition: content 0.2s ease;
+}
+
+#contact .content ul #twitter,
+#contact .content ul #youtube {
+    filter: invert(1);
+    background: transparent;
+}
+
+#contact .content ul #facebook:hover {
+    content: url(icon-images/Facebook_Logo_Primary.png);
+    background: transparent;
+}
+
+#contact .content ul #twitter:hover {
+    content: url(icon-images/logo-twitter-png-47449.png);
+    filter: invert(0);
+}
+
+#contact .content ul #instagram:hover {
+    content: url(icon-images/Instagram_Glyph_Gradient.png);
+    background: transparent;
+}
+
+#contact .content ul #youtube:hover {
+    content: url(icon-images/youtube_social_icon_red.png);
+    filter: invert(0);
 }
 
 #contact .map {
