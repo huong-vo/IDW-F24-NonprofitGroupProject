@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,20 +33,22 @@
                     <div class="donor-info">
                         <h4 class="content-name">Your Information</h4>
 
-                        <form>
+                        <form class="donate-form" action="/" method="GET">
                             <div>
                                 <label for="donate-first-name">First Name</label>
-                                <input type="text" id="donate-first-name" name="donate-first-name" class="name" required>
+                                <input type="text" id="donate-first-name" name="donate-first-name">
+                                <span id="donate-first-name-error" class="error-message"></span>
                             </div>
 
                             <div>
                                 <label for="donate-last-name">Last Name</label>
-                                <input type="text" id="donate-last-name" name="donate-last-name" class="name" required>
+                                <input type="text" id="donate-last-name" name="donate-last-name">
+                                <span id="donate-last-name-error" class="error-message"></span>
                             </div>
 
                             <div>
                                 <label for="donate-email">Email Address</label>
-                                <input type="text" id="donate-email" name="donate-email">
+                                <input type="email" id="donate-email" name="donate-email">
                             </div>
                         </form>
                     </div>
@@ -54,25 +56,29 @@
                     <div class="payment-info">
                         <h4 class="content-name">Payment Information</h4>
 
-                        <form>
+                        <form class="donate-form" action="/" method="GET">
                             <div>
                                 <label for="credit-card">Credit Card Number</label>
-                                <input type="tel" id="credit-card" name="credit-card" maxlength="16" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" placeholder="0000 0000 0000 0000" required> 
+                                <input type="tel" id="credit-card" name="credit-card" maxlength="16" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" placeholder="0000 0000 0000 0000" > 
+                                <span id="credit-card-error" class="error-message"></span>
                             </div>
 
                             <div>
                                 <label for="expiration">Expiration</label>
-                                <input type="tel" id="expiration" name="expiration" maxlength="5" placeholder="MM/YY" required>
+                                <input type="tel" id="expiration" name="expiration" maxlength="5" placeholder="MM/YY">
+                                <span id="expiration-error" class="error-message"></span>
                             </div>
                             
                             <div>
                                 <label for="security-code">Security Code</label>
-                                <input type="tel" id="security-code" name="security-code" maxlength="3" placeholder="CVV" required>
+                                <input type="tel" id="security-code" name="security-code" maxlength="3" placeholder="CVV">
+                                <span id="security-code-error" class="error-message"></span>
                             </div>
 
                             <div>
                                 <label for="donate-amount">Amount</label>
                                 <input type="number" id="donate-amount" name="donate-amount" min="0.01" step="0.01">
+                                <span id="donate-amount-error" class="error-message"></span>
                             </div>
                             
                             <div class="secure">
@@ -84,7 +90,7 @@
                                 <p>By making my donation, I consent that I have read, understood, and agree to all policies contained in the Privacy Policy.</label>
                             </div>
 
-                            <button id="donate-button">Donate</button>
+                            <button type="submit" id="donate-button">Donate</button>
                         </form>
                     </div>
                 </div>

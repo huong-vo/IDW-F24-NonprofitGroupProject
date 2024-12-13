@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,10 +38,10 @@
                                 We will respond as soon as possible.
                             </p>
         
-                            <form action="index.html" method="POST">
+                            <form action="/" method="GET" id="message-form">
                                 <div>
                                     <label for="full-name">Full Name</label>
-                                    <input type="text" id="full-name" name="full-name" class="name">
+                                    <input type="text" id="full-name" name="full-name">
                                 </div>
         
                                 <div>
@@ -54,7 +54,8 @@
                                     <textarea id="message" name="message" rows="5" cols="30"></textarea>
                                 </div>
         
-                                <button>Send Message</button>
+                                <button type="submit" id="message-button">Send Message</button>
+                                <div id="message-error" class="error-message"></div>
                             </form>
                         </div>
             

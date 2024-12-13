@@ -143,6 +143,11 @@ nav .nav-sec .logo img {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.content form .error-message {
+    color: yellow;
+    font-size: 1rem;
+}
+
 
 
 
