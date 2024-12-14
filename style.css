@@ -10,7 +10,6 @@
 }
 
 
-
 /* Navbar */
 body {
     margin: 0;
@@ -24,6 +23,8 @@ body {
     background-position: center;
     /* background-repeat: no-repeat; */
     background-attachment:fixed;
+    position: relative;
+    top: 0;
   }
 
 
@@ -154,8 +155,46 @@ body {
 
 
 /* Media Queries for home */
+/* laptop () */
+@media (max-width: 1920px){
+  .navbar .logo img {
+    height: 320px;
+    width: auto;
+    margin-bottom: 30px;
+    margin-left: 140px;
+  }
 
- 
+  .the {
+    font-size: 25px;
+    top: -62px;
+    left: 48px;
+  }
+
+  .elephant {
+    font-size: 65px;
+    margin-top: -17px;
+  }
+
+  .sanctuary {
+    font-size: 65px;
+    margin-top: -17px;
+  }
+
+  .banner {
+    height: 120vh;
+    margin-top: -20px;
+  }
+
+  .donate-btn {
+    margin-top: 300px;
+  }
+
+  .navbar .nav-sec li {
+    font-size: 18px;
+}
+}
+
+
   /* Learning Opp section */
 
   .learning {
@@ -237,9 +276,10 @@ body {
     right:10px;
     left:10px;
     bottom:0;
-    z-index:1;
+    z-index:1; 
     background:linear-gradient(to right,rgba(221,185,144,0.4),rgba(221,185,144,0.8));
   }
+  /* testing */
   
   #vid-overlay {
     left: 0%;
@@ -247,7 +287,7 @@ body {
     height: 60vh;
     width: 100%;
     position: relative;
-    z-index: -1;
+    z-index: 0;
   }
 
   .box {
@@ -265,7 +305,7 @@ body {
     color: #B45427;
     width: 740px;
     padding: 20px;
-    z-index:1;
+    z-index: 10;
     background-color: rgba(150,128,99,0.4);
   }
 
@@ -273,6 +313,7 @@ body {
     margin-bottom: 20px;
     color: #424436;
     font-size: 60px;
+    z-index: 10;
   }
 
   .elecam p {
@@ -296,6 +337,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
 }
 
 .watch-btn:hover {
@@ -307,6 +349,24 @@ body {
 .watch-btn:active {
     transform: scale(0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+/* laptop () */
+@media (max-width: 1920px){
+  .elephant-img  {
+    margin-left: 200px;
+  }
+
+  .elephant-img img {
+    width: 1200px;
+  }
+
+  .elecam {
+    left: 50%;
+    top: 80px;
+    color: #B45427;
+    width: 710px;
+  }
 }
 
 
@@ -412,6 +472,8 @@ footer p {
   overflow: hidden;
   float: left;
 }
+
+
 
   
 
