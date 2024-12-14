@@ -283,10 +283,10 @@ nav .nav-sec .logo img {
     filter: invert(0);
 }
 
-#contact .content ul #instagram:hover {
+/* #contact .content ul #instagram:hover {
     content: url(icon-images/Instagram_Glyph_Gradient.png);
     background: transparent;
-}
+} */
 
 #contact .content ul #youtube:hover {
     content: url(icon-images/youtube_social_icon_red.png);
