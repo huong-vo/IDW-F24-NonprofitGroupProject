@@ -46,18 +46,21 @@ function eventFunction(donateEvent){
         isValid = false;
     }
 
-    if (creditCard.value === '' || creditCard.value === null) {
-        creditCardError.textContent = "A credit card number is required.";
+    // \d matches any digit from 0 to 9 and can be replaced with [0-9]; {4} determines the exact number of digits 
+    if (creditCard.value === '' || creditCard.value === null || !(/^(\d{4})(\d{4})(\d{4})(\d{4})$/.test(creditCard.value))) {
+        creditCardError.textContent = "A proper card number is required.";
         isValid = false;
     }
 
-    if (expiration.value === '' || expiration.value === null) {
-        expirationError.textContent = "The expiration date is required.";
+    // check if expiration is filled in with a correct format MM/YY using the regex concept and the test function
+    // 0[1-9]|1[0-2] the first digit is 0 and the second is from 1 to 9 or the first is 1 and the second is from 0 to 2, so range is 01-12 for month
+    if (expiration.value === '' || expiration.value === null || !(/^(0[0-9]|1[0-2])\/(\d{2})$/.test(expiration.value))) {
+        expirationError.textContent = "A proper expiration date is required.";
         isValid = false;
     }
 
-    if (securityCode.value === '' || securityCode.value === null) {
-        securityCodeError.textContent = "The security code is required.";
+    if (securityCode.value === '' || securityCode.value === null || !(/^\d{3}$/.test(securityCode.value))) {
+        securityCodeError.textContent = "A proper security code is required.";
         isValid = false;
     }
 
@@ -73,3 +76,57 @@ function eventFunction(donateEvent){
 }
 
 
+// form validation for contact page
+
+const contactFullName = document.getElementById('contact-full-name');
+const contactEmail = document.getElementById('contact-email');
+const contactMessage = document.getElementById('contact-message');
+
+const contactButton = document.getElementById('contact-button');
+
+const contactError = document.getElementById('contact-error');
+
+contactButton.addEventListener('click', (e) => {
+    // a variable to accummulate the messages
+    let errorMessage = [];
+    
+    if (contactFullName.value === '' || contactFullName.value === null) {
+        errorMessage.push("name");
+    }
+
+    // \s matches a white space and + matches one or more occurences
+    if (contactEmail.value === '' || contactEmail.value === null || !(/^([^\s]+)@([^\s]+)\.([^\s]+)$/.test(contactEmail.value))) {
+        errorMessage.push("email address");
+    }
+
+    if (contactMessage.value === '' || contactMessage.value === null) {
+        errorMessage.push("message");
+    }
+
+    // check if any of the validations is not fulfilled
+    if (errorMessage.length > 0) {
+        e.preventDefault();
+
+        // display the message with correct grammar
+        switch (errorMessage.length) {
+            case 1:
+                contactError.innerText = `Please enter your ${errorMessage[0]} properly before sending the message.`;
+                break;
+
+            case 2:
+                contactError.innerText = `Please enter your ${errorMessage.join(" and ")} properly before sending the message.`;
+                break;
+            
+            case 3:
+                // join all the errorMessage elements with a comma among them
+                // replace the last comma with ", and " 
+                contactError.innerText = `Please enter your ${errorMessage.join(", ").replace(/, ([^,]*)$/, ", and $1")} properly before sending the message.`;
+                break;
+            
+            // default is a must-have for switch to work properly
+            default:
+                contactError.innerText = "The form validation is not working.";
+        }
+        
+    }
+})

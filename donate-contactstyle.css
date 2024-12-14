@@ -145,7 +145,8 @@ nav .nav-sec .logo img {
 
 .content form .error-message {
     color: yellow;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
 }
 
 
@@ -172,10 +173,6 @@ nav .nav-sec .logo img {
     /* margin-left: 1rem;
     margin-right: 1rem; */
     border-radius: 20px;
-}
-
-#form .content .donor-info {
-    
 }
 
 #form .content .payment-info {
