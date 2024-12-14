@@ -283,6 +283,7 @@ body {
     z-index:1; 
     background:linear-gradient(to right,rgba(221,185,144,0.4),rgba(221,185,144,0.8));
   }
+  /* testing */
   
   #vid-overlay {
     left: 0%;
