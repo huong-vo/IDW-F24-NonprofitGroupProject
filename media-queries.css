@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 481px) {
     #form {
-        background-image: url(form-image.png);
+        background-image: url(form-contact-images/form-image.png);
         background-size: 100% 70%;
         background-repeat: no-repeat;
     }

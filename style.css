@@ -37,8 +37,6 @@ body {
     position:relative;
     height: 80px;
     top: 0;
-    
-    
   }
 
   .navbar .nav-sec {
@@ -51,8 +49,6 @@ body {
     margin: 0 80px;
     font-size: 20px;
     font-family: "Rozha One", serif;
-
-    
   }
 
   .navbar .nav-sec li a {

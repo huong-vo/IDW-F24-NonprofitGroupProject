@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     background-color: var(--color-darkgreen, black);
-    color: var(--color-creamish, white);
+    color: var(--color-creamish1, white);
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -14,9 +15,64 @@
 
     --p-fw: 600;
     
-    --color-creamish: #EAD7BD;
+    --color-creamish: #DDB990;
+    --color-creamish1: #EAD7BD;
     --color-darkgreen: #424436;
     --color-orangeish: #B45427;
+}
+
+
+/* nav bar */
+nav .nav-sec {
+    /* background-color: var(--color-creamish1, initial); */
+    background-color: white;
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-sec li {
+    /* background-color: var(--color-creamish1, initial); */
+    background-color: white;
+    position: relative;
+}
+
+nav .nav-sec li a {
+    /* background-color: var(--color-creamish1, initial); */
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Rozha One", serif;
+    text-decoration: none;
+}
+
+nav .nav-sec .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -7%;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-orangeish, inital);
+    transition: width 0.3s ease;
+}
+
+nav .nav-sec .nav-item:hover::after {
+    width: 114%;
+    background-color: var(--color-orangeish, initial);
+}
+
+nav .nav-sec .logo img {
+    height: 50px;
+    width: auto;
+    margin: 0 15px;
+    transform: scale(6) translateY(7%);
+    object-fit: cover;
+    background-color: white;
+    background: transparent;
 }
 
 
@@ -68,22 +124,31 @@
 } 
 
 .content form button {
-    background-color: var(--color-orangeish, initial);
-    border: solid 1px;
-    border-radius: 10px;
+    background: linear-gradient(45deg, var(--color-orangeish), #cf5a24);
+    border: none;
+    border-radius: 50px;
     width: fit-content;
-    padding: 0.5rem;
+    padding: 0.75rem 1.5rem;
     margin: 1rem;
-    font-size: var(--p-fs, initial);
+    font-size: 20px;
     font-weight: var(--p-fw, initial);
     cursor: pointer;
     align-self: center;
-    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
 }
 
 .content form button:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+.content form .error-message {
+    color: yellow;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
 
 
 
@@ -108,10 +173,6 @@
     /* margin-left: 1rem;
     margin-right: 1rem; */
     border-radius: 20px;
-}
-
-#form .content .donor-info {
-    
 }
 
 #form .content .payment-info {
@@ -158,9 +219,8 @@
 
 /* contact */
 #contact .heading {
-    border: solid 3px orchild;
     height: 8rem;
-    background-color: var(--color-orangeish, initial);
+    background-color: var(--color-darkgreen, initial);
     position: relative;
 }
 
@@ -174,7 +234,7 @@
     border: solid 2px;
     padding: 1rem;
     white-space: nowrap;
-    background-color: var(--color-orangeish);
+    background-color: var(--color-darkgreen, initial);
 }
 
 #contact .content .content-name {
@@ -203,7 +263,34 @@
 }
 
 #contact .content img {
-    height: 2rem;
+    height: 2.2rem;
+    transition: content 0.2s ease;
+}
+
+#contact .content ul #twitter,
+#contact .content ul #youtube {
+    filter: invert(1);
+    background: transparent;
+}
+
+#contact .content ul #facebook:hover {
+    content: url(icon-images/Facebook_Logo_Primary.png);
+    background: transparent;
+}
+
+#contact .content ul #twitter:hover {
+    content: url(icon-images/logo-twitter-png-47449.png);
+    filter: invert(0);
+}
+
+#contact .content ul #instagram:hover {
+    content: url(icon-images/Instagram_Glyph_Gradient.png);
+    background: transparent;
+}
+
+#contact .content ul #youtube:hover {
+    content: url(icon-images/youtube_social_icon_red.png);
+    filter: invert(0);
 }
 
 #contact .map {
@@ -229,3 +316,18 @@
     background-color: transparent;
 }
 
+
+/* footer */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-size: 0.9rem;
+}
