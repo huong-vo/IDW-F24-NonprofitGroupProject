@@ -32,17 +32,21 @@ The remake website includes the following features:
 * Figma
 
 ## Usage
-* To see the site, check out the [live project demo](https://huong-vo.github.io/IWD-F24-CapstoneGroupProject/).
-* To run this page locally, follow these steps:
+To see the site, check out the [live project demo](https://huong-vo.github.io/IWD-F24-CapstoneGroupProject/).
+
+To run this page locally, follow these steps:
   1. Clone the repository.
   2. Navigate to the project directory.
   3. Open the `index.html` file in your web browser. 
-* This website remake is for ducational purposes only and not meant for commercial use. Users can explore different features offered, but any interactions depicted on the website are solely fictional.
+
+This website remake is for ducational purposes only and not meant for commercial use. Users can explore different features offered, but any interactions depicted on the website are solely fictional.
 
 ## Credit
-* The information presented comes from [The Elephant Sanctuary in Tennessee](https://www.elephants.com/) website.
-* This project is joint work from [huong-vo](https://github.com/huong-vo), [liyah2](https://github.com/liyah2), and [Mekedi180](https://github.com/Mekedi180).
-* This project is accomplished with the help and support from [G{Code} IWD](https://thegcodehouse.com/programs/intro-to-web-dev/) mentors, volunteers, guest speakers, facilitators, and coordinators throughout the program.
+The information presented comes from [The Elephant Sanctuary in Tennessee](https://www.elephants.com/) website.
+
+This project is joint work from [huong-vo](https://github.com/huong-vo), [liyah2](https://github.com/liyah2), and [Mekedi180](https://github.com/Mekedi180).
+
+This project is accomplished with the help and support from [G{Code} IWD](https://thegcodehouse.com/programs/intro-to-web-dev/) mentors, volunteers, guest speakers, facilitators, and coordinators throughout the program.
 
 <!-- ## Contribution
 We welcome any and all contributions! If you want to contribute with your code, follow the steps below. If not but you have awesome ideas, open up an issue explaining some improvements you would like to see.
