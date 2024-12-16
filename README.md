@@ -1,6 +1,10 @@
-# The Elephant Sanctuary in Tennessee - Website Remake by `HAM.`
+<div align="center"> 
 
+# Website Remake by `HAM.` 
 This is a Capstone group project at the end of the Introduction to Web Development program hosted by [G{Code}](https://thegcodehouse.com/). 
+</div>
+
+
 
 ## Table of Content
 * [Project Overview](#project-overview)
@@ -13,7 +17,7 @@ This is a Capstone group project at the end of the Introduction to Web Developme
 * Contribution -->
 
 ## Project Overview
-The goal of this project is to practive what we learned during the program and make a website for one of the given non-profit organizations. The created website should not look like the real one. The chosen website is [The Elephant Sanctuary in Tennessee](https://www.elephants.com/). The remake aims to design the website from scratch and showcase some of the original website's key features. This gives a glimpse of the sanctuary and what they offers to the public.
+The goal of this project is to practice what we learned during the program and make a website for one of the given non-profit organizations. The created website should not look like the real one. The chosen website is [The Elephant Sanctuary in Tennessee](https://www.elephants.com/). The remake aims to design the website from scratch and showcase some of the original website's key features. This gives a glimpse of the sanctuary and what they offers to the public.
 
 This project is purely for personal learning and educational purposes and is not affiliated with the actual organization. 
 
